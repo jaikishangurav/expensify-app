@@ -7,8 +7,7 @@ import { removeExpense } from '../actions/expenses';
 export class EditExpensePage extends React.Component{
     onSubmit = (expense) => {
         this.props.editExpense( this.props.expense.id, expense);
-        this.props.history.push('/');
-        console.log('updated', expense);
+        this.props.history.push('/');        
     };
     onRemove = () => {
         this.props.removeExpense({ id:  this.props.expense.id });
